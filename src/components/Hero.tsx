@@ -6,9 +6,6 @@ export default function Hero() {
       <style jsx>{`
         .hero-bg {
           position: absolute; inset: 0; z-index: 0;
-          background:
-            radial-gradient(ellipse 60% 60% at 80% 40%, rgba(0, 74, 153, 0.25) 0%, transparent 70%),
-            radial-gradient(ellipse 40% 50% at 20% 80%, rgba(230, 126, 34, 0.15) 0%, transparent 60%);
         }
 
         .grid-overlay {
@@ -32,7 +29,6 @@ export default function Hero() {
 
         .btn-primary:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 24px rgba(230, 126, 34, 0.35);
         }
         .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
 
