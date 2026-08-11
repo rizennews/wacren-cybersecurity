@@ -96,7 +96,6 @@ export default function Pillars() {
         }
       `}</style>
       <div className="overview-inner">
-        <div className="section-label reveal">Programme Overview</div>
         <h2 className="reveal">Four Complementary Elements</h2>
         <p className="reveal" style={{ color: 'var(--muted)', maxWidth: '640px', lineHeight: '1.8' }}>
           The WACREN Cybersecurity &amp; Trust Programme brings together four complementary elements that form Africa's emerging cybersecurity trust infrastructure for research and education.

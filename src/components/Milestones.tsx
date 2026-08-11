@@ -115,7 +115,7 @@ export default function Milestones() {
       `}</style>
       <div className="milestones-inner">
         <div className="section-label reveal">Calendar</div>
-        <h2 className="reveal">Upcoming Milestones</h2>
+        <h2 className="reveal">Activities</h2>
         <div className="milestones-grid">
           {milestoneData.map((milestone, index) => (
             <div key={index} className="milestone-card reveal">
