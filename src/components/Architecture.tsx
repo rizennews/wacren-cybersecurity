@@ -90,7 +90,6 @@ export default function Architecture() {
       `}</style>
       
       <div style={{ maxWidth: '1100px', margin: '0 auto', paddingTop: '4rem' }}>
-        <div className="section-label grey reveal">Architecture</div>
         <h2 className="reveal">Programme Architecture</h2>
         
         <div className="arch-full reveal">

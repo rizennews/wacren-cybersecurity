@@ -100,7 +100,6 @@ export default function Partners() {
         }
       `}</style>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-        <div className="section-label reveal">Ecosystem</div>
         <h2 className="reveal">Partners</h2>
         <div className="partners-grid reveal">
           {partnerData.map((partner, index) => (

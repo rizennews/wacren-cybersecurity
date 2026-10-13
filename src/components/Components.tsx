@@ -141,12 +141,10 @@ export default function Components() {
         }
       `}</style>
       <div className="components-inner">
-        <div className="section-label reveal">Programme Components</div>
         <h2 className="reveal">What the Programme Delivers</h2>
         <div className="component-grid">
           {componentData.map((comp, index) => (
             <div key={index} className={`component-card reveal ${comp.isAmber ? 'amber-card' : ''}`}>
-              <div className="card-tag">{comp.tag}</div>
               <h3>{comp.title}</h3>
               <p>{comp.desc}</p>
               {comp.subDesc && <p style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{comp.subDesc}</p>}

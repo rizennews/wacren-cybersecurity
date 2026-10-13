@@ -60,7 +60,6 @@ export default function Hero() {
       <div className="grid-overlay"></div>
 
       <div className="hero-content">
-        <div className="hero-eyebrow">Programme Overview</div>
         <h1>
           WACREN Cybersecurity and
           <em> Trust Programme</em>
