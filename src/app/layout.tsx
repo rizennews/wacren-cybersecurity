@@ -24,8 +24,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "WACREN Cybersecurity & Trust Programme",
-    description: "Strengthening cybersecurity resilience across Africa's research and education networks.",
     site: "@wacren",
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
   },
 };
 
