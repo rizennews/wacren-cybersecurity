@@ -18,7 +18,9 @@ const componentData = [
     tag: "Gamified Training",
     title: "CyberBastion League",
     desc: "Introducing the CyberBastion League in Africa in collaboration with the Open CSIRT Foundation. CyberBastion provides a gamified cyber defence training platform where teams participate in simulated incident response scenarios and cyber defence challenges.",
-    subDesc: "The league begins online and culminates with face-to-face finals during the TrustBroker Africa community event."
+    subDesc: "The league begins online and culminates with face-to-face finals during the TrustBroker Africa community event.",
+    link: "https://indico.wacren.net/event/270",
+    linkText: "indico.wacren.net ↗"
   },
   {
     tag: "Intelligence",

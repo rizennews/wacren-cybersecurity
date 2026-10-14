@@ -17,11 +17,6 @@ export default function Hero() {
           mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
         }
 
-        .hero-eyebrow::before {
-          content: ''; display: block;
-          width: 2.5rem; height: 1.5px; background: #e67e22;
-        }
-        .hero-eyebrow::after { display: none; }
 
         h1 em {
           font-style: normal; color: var(--amber);
@@ -37,8 +32,6 @@ export default function Hero() {
             padding: 6rem 1.5rem 3rem;
             min-height: auto;
           }
-          .hero-eyebrow { margin-bottom: 1.5rem; }
-          .hero-eyebrow::before { width: 2rem; }
           h1 {
             font-size: clamp(2rem, 10vw, 3rem);
             margin-bottom: 1.5rem;
