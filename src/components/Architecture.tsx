@@ -22,7 +22,7 @@ export default function Architecture() {
   return (
     <section id="architecture" ref={sectionRef}>
       <style jsx>{`
-        #architecture { max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem 4rem; }
+        #architecture { max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem 3rem; }
         
         .section-label {
           font-family: var(--mono); font-size: 0.68rem;

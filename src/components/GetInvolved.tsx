@@ -25,7 +25,7 @@ export default function GetInvolved() {
         #get-involved {
           text-align: center;
           background: #002d5c;
-          padding: 4rem 2.5rem;
+          padding: 3rem 2.5rem;
         }
         .involved-inner { max-width: 640px; margin: 0 auto; }
         
@@ -58,12 +58,11 @@ export default function GetInvolved() {
           background: var(--amber); color: #fff;
           border: none; padding: 0.9rem 1.8rem; cursor: pointer;
           letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
-          transition: transform 0.2s, box-shadow 0.2s;
+          transition: transform 0.2s;
           text-decoration: none; display: inline-block;
         }
         .btn-primary:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 24px rgba(230, 126, 34, 0.35);
         }
         
         .btn-secondary {
@@ -81,8 +80,8 @@ export default function GetInvolved() {
         <p className="reveal">Cybersecurity professionals, research networks, and institutions can participate in the programme through the TrustBroker Africa community.</p>
         <div className="involved-btns reveal">
           <a href="https://trustbroker.africa" target="_blank" rel="noopener noreferrer" className="btn-primary">Join the Community ↗</a>
-          <a href="#milestones" className="btn-secondary">Participate in Training</a>
-          <a href="/contact" className="btn-secondary">Contact the Programme Team</a>
+          <a href="https://indico.wacren.net/category/39/" target="_blank" rel="noopener noreferrer" className="btn-secondary">Participate in Training ↗</a>
+          <a href="mailto:secretariat@wacren.net" className="btn-secondary">Contact the Programme Team</a>
         </div>
       </div>
     </section>

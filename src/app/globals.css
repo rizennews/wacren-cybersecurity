@@ -141,7 +141,7 @@ h1 {
   background: #e67e22; color: #fff !important;
   border: none; padding: 0.9rem 1.8rem; cursor: pointer;
   letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s;
   text-decoration: none; display: inline-block;
 }
 
@@ -234,11 +234,9 @@ h2 {
   align-items: center;
   gap: 0.75rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.2);
 }
 
 .btn-home:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(230, 126, 34, 0.3);
   background: #d35400;
 }

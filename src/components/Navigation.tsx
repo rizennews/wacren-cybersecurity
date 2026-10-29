@@ -82,6 +82,17 @@ export default function Navigation() {
           text-decoration: none !important;
         }
         .nav-logo span { color: var(--text) !important; }
+
+        .nav-logo-link {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+        }
+        .nav-logo-img {
+          display: block;
+          height: 46px;
+          width: auto;
+        }
         
         .nav-links { 
           display: flex; gap: 2rem; list-style: none; align-items: center;
@@ -112,6 +123,7 @@ export default function Navigation() {
 
         @media (max-width: 900px) {
           .nav-container { padding: 0.7rem 1.5rem; }
+          .nav-logo-img { height: 38px; }
           .mobile-toggle { display: flex; }
           
           .nav-links {
@@ -188,28 +200,18 @@ export default function Navigation() {
         }
       `}</style>
 
-      {/* TOP BAR */}
-      <div className="top-bar">
-        <div className="top-bar-content">
-          <span>
-            Part of the TrustBroker Africa Ecosystem &nbsp;·&nbsp;
-            <a href="https://trustbroker.africa" target="_blank" rel="noopener noreferrer">trustbroker.africa ↗</a>
-          </span>
-        </div>
-      </div>
-
       {/* NAV */}
       <nav className="nav-container">
         
-        <Link href="/" className="nav-logo" onClick={() => setIsMenuOpen(false)}>
-          WACREN · <span>Cybersecurity & Trust</span>
+        <Link href="/" className="nav-logo nav-logo-link" onClick={() => setIsMenuOpen(false)} aria-label="WACREN Cybersecurity and Trust Programme — home">
+          <img src="/images/wacren.png" alt="WACREN - West and Central African Research and Education Network logo" className="nav-logo-img" width={140} height={46} fetchPriority="high" />
         </Link>
         
         <ul className={`nav-links ${isMenuOpen ? 'nav-links-open' : ''}`}>
           <li><Link href="/#why" onClick={() => setIsMenuOpen(false)}>Why It Matters</Link></li>
           <li><Link href="/#components" onClick={() => setIsMenuOpen(false)}>Components</Link></li>
-          <li><Link href="/#milestones" onClick={() => setIsMenuOpen(false)}>Milestones</Link></li>
-          <li><Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+          <li><Link href="/#milestones" onClick={() => setIsMenuOpen(false)}>Events</Link></li>
+          <li><a href="mailto:secretariat@wacren.net" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
           <a href="https://trustbroker.africa" target="_blank" rel="noopener noreferrer" className="mobile-cta">TrustBroker Africa</a>
         </ul>
 

@@ -27,7 +27,6 @@ const componentData = [
     title: "WACREN ISAC",
     desc: "WACREN is establishing a sectoral Information Sharing and Analysis Centre (ISAC) to support threat intelligence sharing and situational awareness across research and education networks.",
     subDesc: "The ISAC will enable participating organisations to exchange cyber threat intelligence, identify emerging risks, and coordinate responses to cybersecurity incidents.",
-    isAmber: true,
     status: "Under Development"
   }
 ];
@@ -57,7 +56,7 @@ export default function Components() {
           background: var(--surface);
           border-top: 1px solid var(--border);
           border-bottom: 1px solid var(--border);
-          padding: 6rem 2.5rem;
+          padding: 4rem 2.5rem;
         }
         .components-inner { max-width: 1100px; margin: 0 auto; }
         
@@ -146,7 +145,7 @@ export default function Components() {
         <h2 className="reveal">What the Programme Delivers</h2>
         <div className="component-grid">
           {componentData.map((comp, index) => (
-            <div key={index} className={`component-card reveal ${comp.isAmber ? 'amber-card' : ''}`}>
+            <div key={index} className={`component-card reveal `}>
               <h3>{comp.title}</h3>
               <p>{comp.desc}</p>
               {comp.subDesc && <p style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{comp.subDesc}</p>}

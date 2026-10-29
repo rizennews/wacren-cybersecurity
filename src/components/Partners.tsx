@@ -2,9 +2,9 @@
 import React, { useEffect, useRef } from 'react';
 
 const partnerData = [
-  { name: "WACREN", logo: "/images/wacren.png", fallback: "WACREN" },
-  { name: "TrustBroker Africa", logo: "/images/trustbroker.jpg", fallback: "TrustBroker Africa" },
-  { name: "Open CSIRT Foundation", logo: "/images/open-csirt.png", fallback: "Open CSIRT Foundation" }
+  { name: "WACREN", logo: "/images/wacren.png", fallback: "WACREN", url: "https://wacren.net" },
+  { name: "TrustBroker Africa", logo: "/images/trustbroker.jpg", fallback: "TrustBroker Africa", url: "https://trustbroker.africa" },
+  { name: "Open CSIRT Foundation", logo: "/images/open-csirt.png", fallback: "Open CSIRT Foundation", url: "https://opencsirt.org" }
 ];
 
 export default function Partners() {
@@ -30,7 +30,7 @@ export default function Partners() {
       <style jsx>{`
         #partners {
           max-width: 1100px; margin: 0 auto; text-align: center;
-          padding: 6rem 1.25rem; background: var(--surface);
+          padding: 4rem 1.25rem; background: var(--surface);
           border-top: 1px solid var(--border);
         }
         
@@ -103,9 +103,16 @@ export default function Partners() {
         <h2 className="reveal">Partners</h2>
         <div className="partners-grid reveal">
           {partnerData.map((partner, index) => (
-            <div key={index} className="partner-logo-container">
-              <img src={partner.logo} alt={partner.name} className="logo-img" title={partner.name} />
-            </div>
+            <a
+              key={index}
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="partner-logo-container"
+              aria-label={partner.name}
+            >
+              <img src={partner.logo} alt={`${partner.name} logo`} className="logo-img" title={partner.name} loading="lazy" decoding="async" width={200} height={80} />
+            </a>
           ))}
         </div>
       </div>

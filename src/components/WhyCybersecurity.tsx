@@ -27,7 +27,7 @@ export default function WhyCybersecurity() {
           background: var(--surface);
           border-top: 1px solid var(--border);
           border-bottom: 1px solid var(--border);
-          padding: 4rem 2.5rem;
+          padding: 3rem 2.5rem;
         }
         .why-container {
           max-width: 1100px; margin: 0 auto;
@@ -76,7 +76,7 @@ export default function WhyCybersecurity() {
 
         @media (max-width: 1000px) {
           .stat-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-          #why { padding: 4rem 1.5rem; }
+          #why { padding: 3rem 1.5rem; }
           .why-container { gap: 2rem; }
         }
       `}</style>
